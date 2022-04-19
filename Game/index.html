@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | WebpageGame</title>
+</head>
+
+<body style="text-align: center; margin: 0; padding: 0; overflow: hidden">
+    <canvas id="unity-canvas" style="width: 100vw; height: 100vh; background: #000000"></canvas>
+    <script src="Build/Web2.loader.js"></script>
+    <script>
+        createUnityInstance(document.querySelector("#unity-canvas"), {
+            dataUrl: "Build/Web2.data",
+            frameworkUrl: "Build/Web2.framework.js",
+            codeUrl: "Build/Web2.wasm",
+            streamingAssetsUrl: "StreamingAssets",
+            companyName: "DefaultCompany",
+            productName: "WebpageGame",
+            productVersion: "0.1",
+        });
+    </script>
+</body>
+
+</html>

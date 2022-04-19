@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8" />
+    <meta name="theme-color" content="#000000" />
+
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>PathFinder by DAM</title>
+
+    <!-- Include css file -->
+    <link rel="stylesheet" href="Data/style.css">
+</head>
+
+<!-- Body -->
+
+<body id="body" onload="PageStart()" style="background-color: #333333;">
+
+    <form id="mapSettings" style="margin: 10vw; color: #ffffff;">
+        <label for="fname">Width:</label>
+        <input type="text" id="mapWidth" value="10"><br><br>
+        <label for="lname">Height:</label>
+        <input type="text" id="mapHeight" value="10"><br><br>
+        <div class="start" onclick="CreateMap()">Create Map</div>
+    </form>
+
+    <div id="content">
+        <div class="mapFolderView">
+            <div id="mapFolder"></div>
+        </div>
+
+
+
+        <div class="buttonFolder">
+            <div class="button" id="StartButton" onclick="Start()" style="margin-right: 50px;">
+                Start
+            </div>
+            <div class="button" id="TilePlaceButton" onclick="ChangePlacedTile()">
+                Reset tile
+            </div>
+        </div>
+    </div>
+
+    <!--END // Include js file -->
+    <script src="Data/app.js "></script>
+</body>
+
+</html>

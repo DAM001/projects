@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8" />
+    <meta name="theme-color" content="#000000" />
+
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+
+    <title>MineSweeper | by DAM</title>
+    <link rel="icon" type="image/png" href="./Data/Logo.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body oncontextmenu="return false;">
+
+    <!-- StartScreen / SettingsScreen -->
+    <div class="header">
+        <div class="title">MineSweeper</div>
+        <!-- <div class="bottomTitle">by DAM | V1.1.1</div> -->
+        <div id="gameButtons">
+            <div class="button" onclick="Menu();">Menu</div>
+            <div class="button" onclick="Restart();">Restart</div>
+            <div id="score">Score: 0</div>
+        </div>
+
+    </div>
+    <div id="settingsFolder">
+        <div id="settings">
+            <div class="sliderFolder">
+                <div class="sliderText" id="bombNumber">Number of Bombs: 10</div>
+                <input class="slider" type="range" min="1" max="200" value="10" id="sliderBombNumber"></input>
+                <div class="sliderText" id="tableWidth">Table width: 10</div>
+                <input class="slider" type="range" min="5" max="30" value="10" id="sliderTableWidth"></input>
+                <div class="sliderText" id="tableHeight">Table height: 10</div>
+                <input class="slider" type="range" min="5" max="30" value="10" id="sliderTableHeight"></input>
+            </div>
+
+            <div class="start" onclick="Start(true)">Start game!</div>
+        </div>
+    </div>
+
+    <!-- Map -->
+    <div id="gameScreen">
+        <div id="folder"></div>
+    </div>
+
+    <!-- GameOverScreen -->
+    <div id="gameOver">
+        <div id="winFolder">
+            <div id="win">Cleared!
+                <div id="winScore">
+                    (0/0) Score: 0
+                </div>
+            </div>
+        </div>
+        <div id="gameOverButtons">
+            <div class="button" onclick="Menu();">Menu</div>
+            <div class="button" onclick="Restart();">Restart</div>
+        </div>
+    </div>
+
+    <script src="app.js "></script>
+</body>
+
+<!-- MineSweeper by DAM -->
+
+</html>

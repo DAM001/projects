@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | NewYear</title>
+</head>
+
+<body style="text-align: center; margin: 0; padding: 0; overflow: hidden">
+    <canvas id="unity-canvas" style="width: 100vw; height: 100vh; background: #000000"></canvas>
+    <script src="Build/Web.loader.js"></script>
+    <script>
+        createUnityInstance(document.querySelector("#unity-canvas"), {
+            dataUrl: "Build/Web.data",
+            frameworkUrl: "Build/Web.framework.js",
+            codeUrl: "Build/Web.wasm",
+            streamingAssetsUrl: "StreamingAssets",
+            companyName: "DefaultCompany",
+            productName: "NewYear",
+            productVersion: "0.1",
+        });
+    </script>
+</body>
+
+</html>

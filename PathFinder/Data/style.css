@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Text */
+    font-family: 'Open Sans', sans-serif;
+    user-select: none;
+}
+
+#content {
+    width: 100vw;
+    height: 100vh;
+    background-color: #333333;
+    display: none;
+}
+
+.mapFolderView {
+    overflow: auto;
+    padding: 100px;
+    width: 100vw;
+    height: 100vh;
+}
+
+#mapFolder {
+    width: 60px;
+    height: 100px;
+    /* Style */
+    margin: auto;
+    padding: 10px;
+    background-color: #333333;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+}
+
+.tile {
+    width: 20px;
+    height: 20px;
+    float: left;
+    background-color: #3d494e;
+    border: solid 1px #333333;
+    /* Text */
+    color: #ffffff;
+    text-align: center;
+    font-size: 10px;
+}
+
+
+/* Other element */
+
+.buttonFolder {
+    position: fixed;
+    bottom: 0;
+    margin: 10px;
+}
+
+.button {
+    float: left;
+    padding: 2px;
+    margin-right: 5px;
+    background-color: #555555;
+}
+
+
+/* Settings */
+
+.slider {
+    width: 45vw;
+}
