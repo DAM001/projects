@@ -1,0 +1,92 @@
+:root {
+    --size: 50px;
+    --piece-color: #ffffff;
+    --background-color: rgba(0, 0, 0, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+
+/* Logo */
+
+.header {
+    background-color: var(--background-color);
+    align-content: center;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-logo {
+    margin: 0 auto 0 auto;
+    margin-top: 0;
+}
+
+.header-logo-vertical {
+    max-height: var(--size);
+    height: 5vw;
+}
+
+.header-logo-piece {
+    background-color: var(--background-color);
+    max-height: var(--size);
+    height: 5vw;
+    max-width: var(--size);
+    width: 5vw;
+    float: left;
+    border: .5vw #fff;
+}
+
+@keyframes piece {
+    0% {
+        transform: scale(.5);
+        opacity: 0;
+    }
+    75% {
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes pieceIdle {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    5% {
+        transform: scale(1.15);
+        opacity: 1;
+    }
+    10% {
+        transform: scale(.8);
+        opacity: .3;
+    }
+    15% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.header-logo-space {
+    max-height: var(--size);
+    height: 5vw;
+    max-width: var(--size);
+    width: 5vw;
+    float: left;
+}
